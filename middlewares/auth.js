@@ -13,7 +13,6 @@ exports.authenticated = async (req, res, next) => {
 
         const token = authHeader.split(" ")[1];
 
-        // Check if token is in blacklist
         const blacklistedToken = await Token.findOne({ token });
         if (blacklistedToken) {
             newError("Invalid or expired token. Please login again.", 401);
@@ -43,7 +42,6 @@ exports.isAdmin = async (req, res, next) => {
 
         const token = authHeader.split(" ")[1];
 
-        // Check if token is in blacklist
         const blacklistedToken = await Token.findOne({ token });
         if (blacklistedToken) {
             newError("Invalid or expired token. Please login again.", 401);
