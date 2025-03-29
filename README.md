@@ -80,7 +80,3 @@ To send emails using Nodemailer, you need to:
 - `GET /` - Home route
 - `GET /dashboard` - User dashboard (requires authentication)
 - `GET /admin-dashboard` - Admin dashboard (requires admin role)
-
-## License
-
-MIT 
