@@ -59,7 +59,7 @@ To send emails using Nodemailer, you need to:
    - Select "Security"
    - Under "Signing in to Google," select "2-Step Verification" (enable it if not already)
    - At the bottom of the page, select "App passwords"
-   - Select "Mail" as the app and "Other" as the device (give it a name like "Nodemailer")
+   - Select "Mail" as the app and give it a name like "AuthMailer"
    - Click "Generate"
    - Use the 16-character password that appears as your `EMAIL_PASSWORD` in the .env file
 
